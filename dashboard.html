@@ -1,0 +1,88 @@
+<style>
+	a{
+		text-decoration: none;
+	}
+</style>
+
+<input class="form-control ms-auto w-25" type="text" placeholder="Search" aria-label="Search">
+<button class="btn btn-primary" id="admission">Add Admission</button>
+
+
+<!-- Main Content -->
+<div class="container mt-4 hello">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mt-2">
+                <div class="card-body card-box">
+                    <h1 class="card-title">12</h1>
+                    <p class="card-text">Submissions</p>
+                    <a href="#" class="btn btn-primary">Go to Submissions</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mt-2">
+                <div class="card-body card-box">
+                    <h1 class="card-title">12</h1>
+                    <p class="card-text">Students</p>
+                    <a href="#" class="btn btn-primary">Go to Students</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr size="3" class="my-5">
+
+<!-- ----- recent Admissions ------- -->
+<div class="mt-4 m-md-1 m-xl-4">
+    <h2>Recent Admissions</h2>
+    <table class="table table-stripped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Program</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>John Doe</td>
+                <td>Computer Science</td>
+                <td>
+
+                    <li class="nav-item dropdown" style="list-style: none;">
+                        <a class="nav-link dropdown-toggle" href="#" id="crudDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CRUD
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="crudDropdown">
+                            <a class="dropdown-item h6" href="#"><i class="fas fa-search"></i> View</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-pencil-alt"></i> Update</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a>
+                        </div>
+                    </li>
+
+                    <!-- <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div> -->
+                </td>
+                <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+</div>
+
+<script>
+    $('#admission').click(function () {
+        $('.hello').load('form.html');
+    })
+</script>

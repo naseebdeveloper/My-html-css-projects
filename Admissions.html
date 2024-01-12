@@ -1,0 +1,53 @@
+<style>
+	a{
+		text-decoration: none;
+	}
+</style>
+
+
+<input class="form-control ms-auto w-25" type="text" placeholder="Search" aria-label="Search">
+<button class="btn btn-primary" id="admission">Add Admission</button>
+
+
+
+<div class="mt-4 hello" style="margin-left: 4rem;">
+    <h2>Total Admissions</h2>
+    <table class="table table-stripped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Program</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>John Doe</td>
+                <td>Computer Science</td>
+                <td>
+                    <li class="nav-item dropdown" style="list-style: none;">
+                        <a class="nav-link dropdown-toggle" href="#" id="crudDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CRUD
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="crudDropdown">
+                            <a class="dropdown-item h6" href="#"><i class="fas fa-search"></i> View</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-pencil-alt"></i> Update</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a>
+                        </div>
+                    </li>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+</div>
+
+<script>
+    $('#admission').click(function () {
+        $('.hello').load('form.html');
+    })
+</script>

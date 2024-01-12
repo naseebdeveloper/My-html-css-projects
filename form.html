@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<style>
+	a{
+		text-decoration: none;
+	}
+    .form-table {
+        margin-left: auto;
+        padding: .5rem;
+    }
+
+    ol {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li {
+        margin-top: 2rem;
+    }
+
+    .genders {
+        display: flex;
+    }
+
+    p {
+        margin-bottom: 0 !important;
+    }
+
+    table input {
+        width: 10vw !important;
+    }
+
+    table th {
+        font-size: 1rem !important;
+    }
+
+    @media (max-width: 600) {
+        table input {
+            width: 3vw !important;
+        }
+
+        table th {
+            font-size: .5rem !important;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="containre">
+        <form action="" method="post">
+            <h1 class="text-center">UNIVERSITY OF MAKRAN, PANJGUR BALOCHISTAN</h1>
+            <p class="text-center">ADDMISSION FORM SESSION (2024)</p>
+            <div class="form">
+                <div class="border w-25 form-table">Form No:</div>
+            </div>
+            <hr>
+            <div class="container">
+                <u>APPLIED FOR ADMISSION</u>
+                <div class="first-part my-5">
+                    <label for="">Department:</label>
+                    <span>1 <input type="text" name="department-1" class="form-control" id=""></span>
+                    <span>2 <input type="text" name="department-2" class="form-control" id=""></span>
+                    <span>3 <input type="text" name="department-3" class="form-control" id=""></span>
+                </div>
+
+                <!-- ---- second part ------ -->
+                <!-- <div class="second-part my-5 d-flex"> -->
+
+                <div class="row">
+                    <div class="col-md-4 my-2">
+                        <p>Name of the Applicant ( Block Letters ) </p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Father‘s Name: ( Block Letters ) </p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>CNIC / B Form No</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Gender </p>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Nationality </p>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Date of Birth</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Province of Domicile</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Religion</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Contact No. </p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Phone No.</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Physical Fitness </p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Employee</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Guardian Contact No.</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Present Adress</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Permanent Adress</p>
+                        <input class="form-control" type="text">
+                    </div>
+
+
+                    <hr class="my-5">
+
+                    <!-- ------ contact ---------- -->
+                    <strong>3. Emergency Contact:</strong>
+                    <div class="col-md-4 my-2">
+                        <p>Name:</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Relation to Applicant:</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>CNIC NO:</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Adress</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-4 my-2">
+                        <p>Home/Office Ph:</p>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 my-2">
+                            <table class="table table-bordered table-stripped table-hover table-sm w-75">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Certification/Degree</th>
+                                        <th scope="col">Roll No</th>
+                                        <th scope="col">Registration
+                                            Number</th>
+                                        <th scope="col">Passing
+                                            Year
+                                        </th>
+                                        <th scope="col">Total
+                                            Marks</th>
+                                        <th>Obtained
+                                            Marks</th>
+                                        <th>Grade/
+                                            Division</th>
+                                        <th>Board/University</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">SSC/Matriculation</th>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">HSSC/Intermediate</th>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">B.A/B.Sc/Graduation
+                                        </th>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+
+        </form>
+
+        <u>UNDERTAKING</u>
+        <li>
+            The University reserves the right to decline the application form or cancel the admission in case of
+            providing incorrect/fake or incomplete information provided by applicant
+
+        </li>
+        <li>
+            No claim of fee refund will be entertained in case of cancellation of admission semester transcript
+            of earned credits shall stand cancelled.
+        </li>
+        <li>
+            The applicants who have performed their last qualification from out of country, for those the
+            equivalence certificate is mandatory from higher education commission HEC.
+        </li>
+        <li>The applicant should not claim hostel accommodation as a matter of right.</li>
+        <li>I declare that I will abide the rules, regulations and policies enforced by University of Makran at
+            present and those which may be enforced in the future
+        </li>
+        <li>I hereby solemnly declare that the particulars given above are correct to the best of my knowledge
+            and belief. In case of any wrong information or concealment of facts I shall be held responsible for
+            the consequence. Further, I undertake to abide by the Rules and Regulations prescribed by the
+            University of Makran, Panjgur.
+        </li>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
